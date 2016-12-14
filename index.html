@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Frogger</title>
+	    <style>
+
+        body {
+            background-color: black;
+            padding: 0;
+            margin: 0;
+        }
+            #scoreboard {
+                text-align: center;
+                font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+                color: white;
+            }      
+            #gameCanvas {
+                background-color: black;
+                width: 800px;
+                height: 400px;
+                margin: auto;
+                align: center;
+            }  
+        #control-panel {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: #ccc;
+            opacity: 0.5;
+            width: 150px;
+            height: 50px;
+        }
+
+        #control-panel {
+            margin-top: 10px;
+            font-family : arial;
+            font-size: 36px;
+        }
+     
+		</style>
+	</head>
+
+	<body onload='setup();'>
+        <div id='scoreboard'>
+    		<h1>
+    			<label id="lives">Lives: 5</label>
+    		</h1>
+            <h1>
+                <label id="score">Score: 100</label>
+            </h1>        
+        </div>
+        <div id='gameCanvas'></div>
+    	<script src="scripts/three.js"></script>
+        <script src="scripts/keyboard.js"></script>
+    	<script src="scripts/main.js"></script>
+	</body>
+</html>
